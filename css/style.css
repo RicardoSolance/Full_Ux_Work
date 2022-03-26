@@ -1,3 +1,122 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+header {
+  background-color: #5d5fef;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-container > h3 {
+  font-size: 24px;
+  color: #5d5fef;
+}
+.line {
+  width: 343px;
+  border-top: 1px solid #e5e5e5;
+}
+.line > p {
+  color: #828282;
+  margin: 16px, 0px;
+}
+#register-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 343px;
+  height: 56px;
+  position: relative;
+  margin: 20px 16px;
+  border: 2px solid #e5e5e5;
+  background-color: #f2f2f2;
+  outline: none;
+  border-radius: 8px;
+  color: #828282;
+}
+
+.input-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input-label > label {
+  position: absolute;
+  top: 42%;
+  left: 29px;
+  color: #828282;
+}
+.btn {
+  width: 343px;
+  height: 60px;
+  background-color: #5d5fef;
+  border-radius: 8px;
+  margin: 24px 0px 32px 0px;
+  color: #e5e5e5;
+  border: none;
+  outline: none;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e5e5e5;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+/* input,
+select {
+  width: 343px;
+  height: 56px;
+  position: relative;
+  margin: 24px;
+  border: 2px solid #e5e5e5;
+  background-color: #f2f2f2;
+  outline: none;
+  border-radius: 8px;
+} */
+
+/* --------------------------checkbox------------------- */
+input[type="checkbox"] {
+  appearance: none;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 18px;
+  height: 18x;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"] {
+  /* ...existing styles */
+
+  display: grid;
+  place-content: center;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
