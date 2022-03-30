@@ -13,6 +13,8 @@ let passwordErrMessage = document.getElementById('password-error');
 
 let telephone = document.getElementById('numtelfono');
 let telephoneErrMessage = document.getElementById('telephone-error');
+let maincontainer = document.querySelector('.main-container');
+let congrats = document.querySelector('#congrats');
 
 
 
@@ -91,4 +93,15 @@ email.addEventListener('input', function(e){
     console.log();
 })
 
+function displaycongrats() {
+    maincontainer.style.display = "none";
+    congrats.style.display = "flex";
+}
+
+// let sub = document.querySelector('#submit');
+// sub.addEventListener('click', function (e) {
+//     console.log("entraaaa");
+//     e.preventDefault()
+//     congrats.style.display = "flex";
+// })
 
