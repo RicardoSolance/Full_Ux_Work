@@ -61,7 +61,7 @@ header > h2 {
 }
 .line {
   width: 343px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1.5px solid #c5c3c3;
 }
 .line > p {
   color: #828282;
@@ -195,4 +195,10 @@ ul {
 }
 #password-error {
   display: none;
+  color: red;
+  font-size: 12px;
+  transition: all 0.5s ease-in-out;
+}
+#password-correct {
+  color: #24b424;
 }

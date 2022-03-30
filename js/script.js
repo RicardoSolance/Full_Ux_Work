@@ -22,12 +22,17 @@ function confirmPass() {
     let errorpass2 = document.querySelector('#password-error')
     if (password1.value !== password2.value) {
         errorpass2.style.display = "block";
+        errorpass2.innerHTML=`&#9432 Las contraseñas no son iguales`
     } else {
-        errorpass2.style.display = "none";
-        password2.style.border=" 2px solid green"
+        errorpass2.style.color = "#24b424";
+        errorpass2.innerHTML = `&#10003 Las contraseñas son iguales`
     }
 }
-    
+
+function removestyle() {
+    let errorpass2 = document.querySelector('#password-error');
+    errorpass2.innerHTML = ``;
+}
 
 username.addEventListener('input', function(e){
     console.log(e.target.value);
