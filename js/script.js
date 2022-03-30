@@ -14,37 +14,20 @@ let passwordErrMessage = document.getElementById('password-error');
 let telephone = document.getElementById('numtelfono');
 let telephoneErrMessage = document.getElementById('telephone-error');
 
-console.log(pass);
-pass.addEventListener('onkeyup', (event) => {
-    // event.target.style.color = 'pink';
-    let password1 = document.querySelector('#password').value;
-    let password2 = document.getElementById('password2').value;
-    console.log(password1);
-    // if (password1 === password2) {
-    //     console.log("correcto");
-    // }
 
-});
 
-function verifyPassword() {
-    console.log("hola");
-    
-    // console.log(password1);
-    // var nameValue = "test";
-
-//      // the typeof operator returns a string.
-//      if(typeof nameValue !== "string"){
-//         window.alert("Please re-enter your name")
-//     // we use strict validation ( !== ) because it's a good practice.
-//     }else if(password1 !== password2) {
-//        window.alert("Passwords do not match!")
-//     }
-// //    if (password1!=password2) {
-//        passwordErrMessage.style.display = 'block';
-//    }else{
-//     passwordErrMessage.style.display = 'none';
-//    }
+function confirmPass() {
+    let password1 = document.querySelector('#password');
+    let password2 = document.getElementById('password2');
+    let errorpass2 = document.querySelector('#password-error')
+    if (password1.value !== password2.value) {
+        errorpass2.style.display = "block";
+    } else {
+        errorpass2.style.display = "none";
+        password2.style.border=" 2px solid green"
+    }
 }
+    
 
 username.addEventListener('input', function(e){
     console.log(e.target.value);
